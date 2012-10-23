@@ -37,7 +37,9 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 group :test do
-  gem 'minitest'
-  gem "capybara"
-  gem "launchy"
+  gem 'cucumber-rails', '1.0.6', :require => false
+  gem 'database_cleaner'
+  gem 'capybara'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
 end
