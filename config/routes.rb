@@ -1,5 +1,6 @@
 Blog::Application.routes.draw do
-
+root :to => "posts#index"
+resources :comments
 resources :posts do
 resources :comments
 end
