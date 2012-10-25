@@ -31,3 +31,7 @@ module NavigationHelpers
 end
 
 World(NavigationHelpers)
+
+#udi_added
+when /the list of posts/
+  posts_path
