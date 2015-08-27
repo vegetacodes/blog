@@ -1,13 +1,13 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.13'
+gem 'rails', '3.2.17'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
 
-gem 'yui-purecss'
+# gem 'yui-purecss'
 
 gem 'thin'
 # Gems used only for assets and not required
@@ -38,6 +38,7 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
 group :test do
   gem 'cucumber-rails', '1.0.6', :require => false
   gem 'database_cleaner'

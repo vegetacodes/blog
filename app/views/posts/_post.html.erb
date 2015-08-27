@@ -1,6 +1,6 @@
-<%= div_for @post do %>
-<h2><%= link_to_unless_current h(@post.title) %></h2>
-<%= simple_format h(@post.body) %>
-<b><%= simple_format h(@post.author_name) %></b>
+<%= div_for @post, :class => 'jumbotron' do %>
+  <h2><%= link_to_unless_current h(@post.title) %></h2>
+  <%= simple_format h(@post.body) %>
+  <div class="pull-right"> posted by:<b><%= simple_format h(@post.author_name) %></b></div>
 <% end %>
 

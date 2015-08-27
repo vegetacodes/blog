@@ -1,6 +1,7 @@
+<div class="container">
 <%= render :partial => @post %>
 
-<h2>Comments</h2>
+<h4>Comments</h4>
 	<div id="comments">
 	<%= render :partial => @post.comments.reverse %>
 </div>
@@ -8,10 +9,11 @@
 <%= form_for [@post, Comment.new] , :remote => true do |f| %>
 <p>
 <%= f.label :body, "New Comment" %><br />
-<%= f.text_area :body %>
+<%= f.text_area :body, :size => "80x5", :class => "input-group" %>
 </p>
-<p><%= f.submit "Add Comment" %></p>
+<p><%= f.submit "Add Comment", :class => 'btn btn-sm btn-success' %></p>
 <% end %>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<%= link_to 'Edit', edit_post_path(@post), :class => 'btn btn-sm btn-primary' %> |
+<%= link_to 'Back', posts_path, :class => 'btn btn-sm btn-info' %>
+</div>
